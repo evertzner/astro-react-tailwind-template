@@ -1,0 +1,33 @@
+# Enable debugging and exit on error
+set -e
+
+# Color definitions
+RESET="\033[0m"
+RED="\033[31m"
+GREEN="\033[32m"
+YELLOW="\033[33m"
+BLUE="\033[34m"
+MAGENTA="\033[35m"
+CYAN="\033[36m"
+
+# Custom message before starting the process
+echo "${MAGENTA}🚀 Starting the pre-commit process... Good luck!${RESET}"
+
+# Run `npm check`
+echo "${YELLOW}🔍 Running 'npm check'...${RESET}"
+if ! npm run check; then
+  echo "${RED}❌ 'npm check' failed! Please fix the issues before committing. 😢${RESET}"
+  exit 1
+fi
+echo "${GREEN}✅ 'npm check' completed successfully!${RESET}"
+
+# Run `npm lint`
+echo "🔍 Running 'npm lint'..."
+if ! npm run lint; then
+  echo "${RED}❌ 'npm lint' failed! Please fix the issues before committing. 😢${RESET}"
+  exit 1
+fi
+echo "${GREEN}✅ 'npm lint' completed successfully!${RESET}"
+
+# Custom message after the process finishes
+echo "${CYAN}🎉 All checks passed! Ready to commit! 🚀"
