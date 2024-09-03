@@ -17,8 +17,7 @@ Inside of your Astro project, you'll see the following folders and files:
 ```text
 /
 ├── .husky/
-│   └── _
-│   └── pre-commit
+│   └── _pre-commit
 ├── public/
 │   └── favicon.svg
 ├── src/
@@ -56,3 +55,13 @@ All commands are run from the root of the project, from a terminal:
 | `npm run format`  | Format the document using Prettier           |
 | `npm run check`   | Check types using `astro check`              |
 | `npm run lint`    | Check linting and format                     |
+
+## Husky
+
+To initiate husky run the following command.
+
+```sh
+npx husky init
+```
+
+Replace `pre-commit` file content with content from `_pre-commit`
