@@ -7,7 +7,7 @@ Here you will find a template to create an `Astro` project that uses `React` and
 Run the following command to create a project with the template:
 
 ```sh
-npm create astro@latest <project-name> -- --template evertzner/astro-react-tailwind-template --yes
+pnpm create astro@latest <project-name> -- --template evertzner/astro-react-tailwind-template --yes
 ```
 
 ## 🚀 Project Structure
@@ -46,15 +46,15 @@ Any static assets, like images, can be placed in the `public/` directory.
 
 All commands are run from the root of the project, from a terminal:
 
-| Command           | Action                                       |
-| :---------------- | :------------------------------------------- |
-| `npm install`     | Installs dependencies                        |
-| `npm run dev`     | Starts local dev server at `localhost:4321`  |
-| `npm run build`   | Build your production site to `./dist/`      |
-| `npm run preview` | Preview your build locally, before deploying |
-| `npm run format`  | Format the document using Prettier           |
-| `npm run check`   | Check types using `astro check`              |
-| `npm run lint`    | Check linting and format                     |
+| Command            | Action                                       |
+| :----------------- | :------------------------------------------- |
+| `pnpm install`     | Installs dependencies                        |
+| `pnpm run dev`     | Starts local dev server at `localhost:4321`  |
+| `pnpm run build`   | Build your production site to `./dist/`      |
+| `pnpm run preview` | Preview your build locally, before deploying |
+| `pnpm run format`  | Format the document using Prettier           |
+| `pnpm run check`   | Check types using `astro check`              |
+| `pnpm run lint`    | Check linting and format                     |
 
 ## Husky
 
